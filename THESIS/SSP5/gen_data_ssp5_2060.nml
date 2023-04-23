@@ -1,0 +1,22 @@
+&gen_data_namelist
+  input_dir       = "/glade/scratch/keerzhang/Temp_RawData/RawSSP5/"
+  urban_tbd_fn    = "tall_bldg_dist_1km_allzero.nc"
+  urban_hd_fn     = "high_dens_1km_allzero.nc"
+  urban_md_fn     = "ssp5_2060_ad_norm_c20220416.nc"
+  regions_fn      = "urban_regions.nc"
+  urban_prop_dir  = "./"
+  urban_prop_fn   = "region_prop.LID.csv"
+  metadata_title  = "Gao_O'neil_SSP5;pcturb with respect to total grid cell"
+  metadata_source = "Gao, J. and M. Pesaresi. 2021. Downscaling SSP-consistent Global Spatial Urban Land Projections from 1/8-degree to 1-km Resolution 2000-2100. Scientific Data 8(1): 281. https://doi.org/10.1038/s41597-021-01052-0."
+  metadata_caseID = "Gao_O'neil_SSP5"
+  output_dir      = "/glade/scratch/keerzhang/THESIS_pcturb_grid/urban_properties_180622_release/Output/SSP5/"
+  output_fn_1km   = "urban_properties_data.1km_ssp5_2060_c20220910.nc"
+  output_fn_05deg = "urban_properties_data.05deg_ssp5_2060_c20220910.nc"
+
+
+! additional input required by gen_data_clm.ncl
+  template_dir    = "../../DATA/"
+  template_fn     = "CLM50_template_c160923.nc"
+  mksrf_dir       = "../../DATA/"
+  mksrf_fn        = "surfdata_0.9x1.25_16pfts_Irrig_CMIP6_simyr1850_Control_c181017.nc"
+  output_fn_clm   = "CLM50_tbuildmax_Oleson_2016_0.9x1.25_simyr1849-2106_c191226.nc"
